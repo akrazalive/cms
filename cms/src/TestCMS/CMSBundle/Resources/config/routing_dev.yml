@@ -1,0 +1,44 @@
+_cms_homepage:
+    pattern: /
+    defaults: { _controller: TestCMSCMSBundle:Default:index }
+    methods:   [GET]
+    
+_cms_login:
+    pattern: /
+    defaults: { _controller: TestCMSCMSBundle:Default:login }
+    methods:   [POST]
+    
+_cms_createcontent:
+    pattern: /createcontent
+    defaults: { _controller: TestCMSCMSBundle:Default:createcontent }
+    
+_cms_user_register:
+    pattern: /user/register
+    defaults: { _controller: TestCMSCMSBundle:User:register }
+    methods:   [GET]
+    
+_cms_user_register_process:
+    pattern: /user/register
+    defaults: { _controller: TestCMSCMSBundle:User:register_process }
+    methods:   [POST]
+    
+_cms_user_authenticate:
+    pattern: /user/authenticate
+    defaults: { _controller: TestCMSCMSBundle:User:authenticate, _format: 'json' }
+    methods:   [POST]   
+    
+_cms_user_loginfb:
+    pattern: /user/loginfb
+    defaults: { _controller: TestCMSCMSBundle:User:loginfb }
+
+_cms_user_create:
+    pattern: /user/create
+    defaults: { _controller: TestCMSCMSBundle:User:create }
+    
+_cms_user_edit:
+    pattern: /user/edit
+    defaults: { _controller: TestCMSCMSBundle:User:edit }
+    
+_cms_users_list:
+    pattern: /users/list
+    defaults: { _controller: TestCMSCMSBundle:Users:list }

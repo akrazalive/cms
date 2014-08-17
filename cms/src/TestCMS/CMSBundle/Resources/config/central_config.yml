@@ -1,0 +1,12 @@
+facebook:
+  app_id: 1470008403263684
+  app_secret: LikeIWouldReallyCommitThisOMG
+  
+gmail:
+  SMTP_server_address: smtp.gmail.com
+  SMTP_user_name: cloudrider9@gmail.com
+  SMTP_password: YeahLikeImGoingToTellYou
+  SMTP_port_TLS: 587
+  SMTP_port_SSL: 465
+  SMTP_TLS_SSL_required: yes
+  

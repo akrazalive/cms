@@ -1,0 +1,40 @@
+{{ include("TestCMSCMSBundle:Default:base_top.html.twig") }}
+
+ <title>Admin - List Users</title>
+  </head>
+
+{{ include("TestCMSCMSBundle:Default:base_top2.html.twig") }}
+
+{{ include("TestCMSCMSBundle:User:admin_nav.html.twig") }}
+
+<h1 class="adminH1">List Users</h1> 
+
+<p></p>
+
+<table class="ordTbl">
+  <tr>
+    <th>Last Name</th>
+    <th>First name</th>
+    <th>Email</th>
+    <th>Access Group</th>
+    <th>Created</th>
+    <th>Updated</th>
+    <th>ID</th>
+    <th>Active</th>
+   </tr>
+{% for user in results["users"] %}
+  <tr>
+    <td>{{ user["last_name"] }}</td>
+    <td>{{ user["first_name"] }}</td>
+    <td>{{ user["email"] }}</td>
+    <td>{{ user["group_name"] }}</td>
+    <td>{{ user["created_date"] }}</td>
+    <td>{{ user["updated_date"] }}</td>
+    <td>{{ user["id"] }}</td>
+    <td>{{ user["active"] }}</td>
+  </tr>
+{% endfor %}
+</table>
+
+
+{{ include("TestCMSCMSBundle:Default:base_bottom.html.twig") }}

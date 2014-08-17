@@ -1,0 +1,4 @@
+_main:
+    resource: "@TestCMSCMSBundle/Resources/config/routing.yml"
+    prefix:   /
+    

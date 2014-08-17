@@ -1,0 +1,7 @@
+parameters:
+#    test_cmscms.example.class: TestCMS\CMSBundle\Example
+
+services:
+#    test_cmscms.example:
+#        class: %test_cmscms.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,57 @@
+{{ include("TestCMSCMSBundle:Default:base_top.html.twig") }}
+
+ <title>Register User</title>
+  </head>
+
+{{ include("TestCMSCMSBundle:Default:base_top2.html.twig") }}
+
+	<nav>
+	  <span class="size1of4"><br></span>
+	  <span class="size1of4"><br></span>
+	  <span class="size1of4"><br></span>
+	  <span class="fRight smallClickable">Logout</span>
+	</nav>
+	
+	<h1 class="regularH1">Register</h1>
+	
+	<p id="resultsArea">{{ result["result"] }}</p>
+	<p id="errorsArea">{{ result["error"] }}</p>  
+	
+	<p>Please enter your details in order to register</p>
+	<br>
+	
+	<form id="frmRegister" action="{{ path('_cms_user_register') }}" method="post">
+	
+		<div class="line spaced">
+	    <label for="uFirstName" class="size1of5">First name</label>
+	    <div class="inputField">
+	      <input type="text" name="uFirstName" id="uFirstName" size="20" />
+	    </div> 
+	  </div>
+	  
+	  <div class="line spaced">
+	    <label for="uLastName" class="size1of5">Last name</label>
+	    <div class="inputField">
+	      <input type="text" name="uLastName" id="uLastName" size="20" />
+	    </div> 
+	  </div>
+		
+		<div class="line spaced">
+	    <label for="uEmail" class="size1of5">Email address</label>
+	    <div class="inputField">
+	      <input type="text" name="uEmail" id="uEmail" size="40" />
+	    </div> 
+	  </div>
+	
+	  <div class="line spaced">
+	    <label for="uPassword" class="size1of5">Password</label>
+	    <div class="inputField">
+	      <input type="password" name="uPassword" id="uPassword" size="20" />
+	    </div> 
+	  </div>
+	  
+	  <input type="submit" id="btnSubmit" value="Submit" />
+
+  </form> 
+
+{{ include("TestCMSCMSBundle:Default:base_bottom.html.twig") }}

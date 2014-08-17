@@ -1,0 +1,26 @@
+{{ include("TestCMSCMSBundle:Default:base_top.html.twig") }}
+
+  <script type="text/javascript" src="{{ asset('bundles/testcmscms/js/login.js') }}">
+    </script>
+
+ <title>Create Content</title>
+  </head>
+
+{{ include("TestCMSCMSBundle:Default:base_top2.html.twig") }}
+
+<nav>
+  <span class="size1of4"><br></span>
+  <span class="size1of4"><br></span>
+  <span class="size1of4"><br></span>
+  <span class="fRight smallClickable">Logout</span>
+</nav>
+
+<h1 class="regularH1">Create Content</h1>
+  
+  <p id="resultsArea">{{ result["success"] }}</p>
+  <p id="errorsArea">{{ result["error"] }}</p>  
+
+
+<br>
+
+{{ include("TestCMSCMSBundle:Default:base_bottom.html.twig") }}

@@ -1,0 +1,65 @@
+{{ include("TestCMSCMSBundle:Default:base_top.html.twig") }}
+
+  <script type="text/javascript" src="{{ asset('bundles/testcmscms/js/login.js') }}">
+    </script>
+
+ <title>Log In / Log Out</title>
+  </head>
+
+{{ include("TestCMSCMSBundle:Default:base_top2.html.twig") }}
+
+<nav>
+  <span class="size1of4"><br></span>
+  <span class="size1of4"><br></span>
+  <span class="size1of4"><br></span>
+  <span class="fRight smallClickable">Logout</span>
+</nav>
+
+<h1 class="regularH1">Log In</h1> 
+
+<p>Test links:</p>
+
+<ul>
+  <li><a href="{{ path('_cms_user_register') }}">Register User</a></li>
+  <li><a href="{{ path('_cms_user_create') }}">Admin - Create User</a></li>
+  <li><a href="{{ path('_cms_user_edit') }}">Admin - Edit User</a></li>
+  <li><a href="{{ path('_cms_users_list') }}">Admin - List Users</a></li>
+</ul>
+<br>
+
+  <p>Please enter your login details for New CMS 
+  <button id="btnRegister" class="fRight" data-link="{{ path('_cms_user_register') }}">
+  Sign Up / Register</button></p>
+  <br>
+  
+  <form id="frmLogin" action="{{ path('_cms_homepage') }}" method="post">
+  
+  <div class="line spaced">
+    <label for="uEmail" class="size1of5">Email address</label>
+    <div class="inputField">
+      <input type="text" name="uEmail" id="uEmail" size="40" />
+    </div> 
+  </div>
+  
+
+  <div class="line spaced">
+    <label for="uPassword" class="size1of5">Password</label>
+    <div class="inputField">
+      <input type="password" name="uPassword" id="uPassword" size="20" />
+    </div> 
+  </div>
+  
+  <p><input type="submit" id="btnSubmit" value="Submit" /></p>
+  
+  </form>
+  
+  <div class="line spaced">
+    <a href="{{ path('_cms_user_loginfb') }}">Or log in via Facebook 
+    <img src="{{ asset('bundles/testcmscms/images/facebook_logo_small.jpg') }}" 
+    alt="facebook logo"/>
+    </a>
+  </div>
+  
+  <br>
+
+{{ include("TestCMSCMSBundle:Default:base_bottom.html.twig") }}
